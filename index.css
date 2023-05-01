@@ -1,0 +1,63 @@
+body, button, p {
+    font-family: 'Manrope', sans-serif;
+    font-weight: 700;
+}
+.body {
+    box-sizing: border-box;
+}
+
+h1 {
+    text-align: center;
+    font-size: 40px;
+    line-height: 50px;
+}
+
+.counter-wrapper {
+    margin: 50px auto; 
+    padding: 20px;
+    width: 600px;
+    height: 500px;
+    box-shadow:
+       inset 0 -3em 3em rgba(0,0,0,0.1),
+             0 0  0 2px rgb(255,255,255),
+             0.3em 0.3em 1em rgba(0,0,0,0.3);
+}
+
+.counter {
+    margin: 0 auto 36px auto;
+    width: 100px;
+    text-align: center;
+    font-size: 32px;
+    line-height: 44px;
+    color: #000000;
+    border: 1px solid #000000;
+    border-radius: 10px;
+}
+
+.counter-btn {
+    display: block;
+    margin: 0 auto 36px auto;
+    width: 500px;
+    height: 100px;
+    background: #4191FF;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
+
+.reset-btn {
+    display: block;
+    margin: 0 auto;
+    width: 500px;
+    height: 100px;
+    background: #D45366;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 32px;
+    line-height: 44px;
+    color: #FFFFFF;
+}
