@@ -1,9 +1,15 @@
-body, button, p {
+body {
+    box-sizing: border-box;
     font-family: 'Manrope', sans-serif;
     font-weight: 700;
+    width: 100%;
+    background: #FFFFFF;
 }
-.body {
-    box-sizing: border-box;
+
+button {
+    font-family: inherit;
+    border: none;
+    cursor: pointer;
 }
 
 h1 {
@@ -13,9 +19,11 @@ h1 {
 }
 
 .counter-wrapper {
-    margin: 50px auto; 
-    padding: 20px;
-    width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    margin: auto; 
+    max-width: 600px;
     height: 500px;
     box-shadow:
        inset 0 -3em 3em rgba(0,0,0,0.1),
@@ -24,7 +32,7 @@ h1 {
 }
 
 .counter {
-    margin: 0 auto 36px auto;
+    margin: 0 auto;
     width: 100px;
     text-align: center;
     font-size: 32px;
@@ -35,29 +43,44 @@ h1 {
 }
 
 .counter-btn {
-    display: block;
-    margin: 0 auto 36px auto;
-    width: 500px;
+    margin: 0 auto;
+    max-width: 500px;
     height: 100px;
     background: #4191FF;
     border-radius: 20px;
-    border: none;
-    cursor: pointer;
     font-size: 32px;
     line-height: 44px;
     color: #FFFFFF;
 }
 
 .reset-btn {
-    display: block;
     margin: 0 auto;
-    width: 500px;
+    max-width: 500px;
     height: 100px;
     background: #D45366;
     border-radius: 20px;
-    border: none;
-    cursor: pointer;
     font-size: 32px;
     line-height: 44px;
     color: #FFFFFF;
+}
+
+.counter-btn:hover,
+.reset-btn:hover {
+    opacity: 0.8;
+}
+
+@media (max-width:767px) {
+    h1 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+    .counter-wrapper {
+        gap: 20px;
+        width: 100%;
+        height: 400px;
+    }
+    .counter-btn,
+    .reset-btn {
+        width: 100%;
+    }
 }

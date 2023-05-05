@@ -1,6 +1,6 @@
-let button = document.querySelector('.counter-btn');
-let buttonReset = document.querySelector('.reset-btn');
-let counterText = document.querySelector('.counter')
+const button = document.getElementById('addCircleButton');
+const buttonReset = document.getElementById('resetButton');
+const counterText = document.getElementById('counterValue')
 let counter = 0;
 
 button.addEventListener('click', function() {
