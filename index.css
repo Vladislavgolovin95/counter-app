@@ -44,7 +44,7 @@ h1 {
 
 .counter-btn {
     margin: 0 auto;
-    max-width: 500px;
+    width: 500px;
     height: 100px;
     background: #4191FF;
     border-radius: 20px;
@@ -55,7 +55,7 @@ h1 {
 
 .reset-btn {
     margin: 0 auto;
-    max-width: 500px;
+    width: 500px;
     height: 100px;
     background: #D45366;
     border-radius: 20px;
